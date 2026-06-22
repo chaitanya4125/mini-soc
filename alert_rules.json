@@ -1,0 +1,58 @@
+{
+  "rules": [
+    {
+      "id": "RULE-001",
+      "name": "Brute Force Attack",
+      "pattern": "Failed password",
+      "threshold": 5,
+      "time_window": 60,
+      "severity": "CRITICAL",
+      "description": "Multiple failed login attempts detected"
+    },
+    {
+      "id": "RULE-002",
+      "name": "SQL Injection Attempt",
+      "pattern": "sql injection",
+      "threshold": 1,
+      "time_window": 10,
+      "severity": "CRITICAL",
+      "description": "SQL injection attack detected"
+    },
+    {
+      "id": "RULE-003",
+      "name": "Malware Detection",
+      "pattern": "malware detected",
+      "threshold": 1,
+      "time_window": 10,
+      "severity": "CRITICAL",
+      "description": "Malware signature detected"
+    },
+    {
+      "id": "RULE-004",
+      "name": "Unauthorized Access",
+      "pattern": "403 Forbidden",
+      "threshold": 3,
+      "time_window": 30,
+      "severity": "HIGH",
+      "description": "Multiple unauthorized access attempts"
+    },
+    {
+      "id": "RULE-005",
+      "name": "Privilege Escalation",
+      "pattern": "admin account created",
+      "threshold": 1,
+      "time_window": 30,
+      "severity": "CRITICAL",
+      "description": "New admin account creation detected"
+    },
+    {
+      "id": "RULE-006",
+      "name": "Port Scanning",
+      "pattern": "port scan",
+      "threshold": 3,
+      "time_window": 20,
+      "severity": "MEDIUM",
+      "description": "Possible port scanning activity"
+    }
+  ]
+}
